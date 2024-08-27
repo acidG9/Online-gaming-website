@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url('https://live.staticflickr.com/65535/53942121801_af8019ca30_h.jpg') no-repeat center center fixed;
+  background: url('/bg.png') no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -31,50 +31,32 @@ body {
   align-items: center;
 }
 
-.head-btn {
-  padding: 8px 12px;
-  font-size: 0.85rem;
+.head-btn, .head-themeBtn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
   border: none;
-  border-radius: 8px;
-  background: #f0f0f0;
-  color: black;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
 }
 
-.head-btn:hover {
-  background: #e0e0e0;
+.head-btn:hover, .head-themeBtn:hover {
+  background: #5800FF;
+  color: #ffffff;
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.head-btn:active {
-  background: #d0d0d0;
-  transform: scale(0.98);
-}
-
-.head-themeBtn {
-  padding: 8px 12px;
-  font-size: 0.85rem;
-  border: none;
-  border-radius: 8px;
-  background: #f0f0f0;
-  color: black;
-  cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.head-themeBtn:hover {
-  background: #e0e0e0;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.head-themeBtn:active {
-  background: #d0d0d0;
+.head-btn:active, .head-themeBtn:active {
+  background: #4a00e0;
+  color: #ffffff;
   transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* body */
@@ -89,32 +71,37 @@ body {
 }
 
 .body-top h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 8px #5800FF, 0 0 16px #5800FF, 0 0 24px #5800FF, 0 0 32px #5800FF;
 }
 
 .body-top button {
-  margin-bottom: -2rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: -5.5rem;
   padding: 8px 12px;
-  font-size: 0.85rem;
-  border: none;
+  font-size: 1.3rem;
+  border: 2px solid white;
   border-radius: 8px;
-  background: #f0f0f0;
-  color: black;
+  background: transparent;
+  color: white;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
 }
 
 .body-top button:hover {
-  background: #e0e0e0;
+  background: white;
+  color: black;
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .body-top button:active {
-  background: #d0d0d0;
+  background: #e0e0e0;
+  color: black;
   transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .body-mid {
