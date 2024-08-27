@@ -5,7 +5,7 @@ function Footer() {
         <>
           <div className="footer-div">
             <div className="footer-div1">
-                <h2>Pokegames.GG</h2>
+                <h2>Pokegames</h2>
                 <p className="footer-p">where the fun never stops!</p>
             </div>
             <div className="footer-div2">
